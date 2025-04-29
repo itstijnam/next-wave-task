@@ -46,7 +46,7 @@ function Home() {
                 <h2>{product?.title}</h2>
                 {/* <p>{product?.price} Rs</p> */}
                 <div className="produt-likes">
-                  <p>Sign in or Create an account to see pricing</p>
+                  <p>{user ? product?.price : `Sign in or Create an account to see pricing`}</p>
                   <span>♡ {product?.rating?.rate}</span>
                 </div>
               </div>

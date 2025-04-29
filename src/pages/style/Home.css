@@ -120,6 +120,7 @@
   
   .produt-likes{
       display: flex;
+      justify-content: space-between;
   }
 
   .produt-likes li {
