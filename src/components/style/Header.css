@@ -1,0 +1,141 @@
+/* Header.css */
+
+.header-container {
+    width: 100%;
+    font-family: sans-serif;
+  }
+  
+  /* Top strip */
+  .header-top {
+    background-color: #000;
+    color: #f55;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  
+  .header-top img {
+    height: 14px;
+    margin-right: 4px;
+  }
+  
+  /* Main header area */
+  .header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Company details and icons */
+  .company-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .comapany-image img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  
+  .comapany-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .comapany-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .comapany-feature ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  .comapany-feature ul li{
+    cursor: pointer;
+  }
+  .comapany-feature ul li:hover, .comapany-feature p:hover{
+    color: red;
+    transition: 0.3s;
+  }
+  
+  .comapany-feature p {
+    cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .dropdownIcon {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  
+  /* Bottom navigation menu */
+  .company-services ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .company-services li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .company-services li:hover {
+    color: #555;
+    color: red;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .company-detail,
+    .company-services ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .comapany-feature {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .company-services ul {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 15px 20px;
+    }
+  
+    .comapany-name {
+      font-size: 20px;
+    }
+  
+    .company-services ul {
+      font-size: 13px;
+    }
+  }
+  
